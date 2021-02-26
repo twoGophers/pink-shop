@@ -1,7 +1,7 @@
 <template>
     <div class="v-header">
         <div class="logo">
-            <img src="../../images/img.png" alt="" srcset="">
+            <img src="../../images/logot.png" alt="" srcset="">
         </div>
         <div class="titleHeader">
             <h3>Pink- Cat</h3>
@@ -71,9 +71,10 @@ export default {
     .logo{
         width: 20%;
         display: flex;
+        justify-content: center;
         img {
-            width: 80%;
-            height: auto;
+            width: 52%;
+            height: 100%;
         }
     }
     .titleHeader {
