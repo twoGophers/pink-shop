@@ -11,7 +11,7 @@
                 <p>Телефон : +8-123-456-78-90</p>
                 <p>Контакты  : pink...</p>
             </div>
-            <div class="searchHeader">
+            <div class="searchHeaderIt">
                 <b-nav-form>
                 <b-form-input v-model="searchValue" size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
                     <router-link :to="{name : 'catalog'}">
@@ -101,7 +101,7 @@ export default {
             align-items: center;
             font-family: URW Chancery L, cursive;
         }
-        .searchHeader{
+        .searchHeaderIt{
             width: 40%;
             display: flex;
             justify-content: center;
@@ -123,6 +123,117 @@ export default {
                 margin-left: 10px;
             }
 
+        }
+    }
+}
+
+@media screen and (max-width: 1215px){
+    .v-header {
+        .logo{
+            img {
+                width: 70%;
+            }
+        }
+    }
+    .searchHeaderIt{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        .form-inline{
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            .router-link-exact-active{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                .btn{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .contactHeader{
+        p{
+            font-size: 0.9em;
+        }
+    }
+}
+
+@media screen and (max-width: 862px){
+    .v-header{
+        width: 100%;
+        height: 160px;
+        .searcheHeader{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+            justify-content: center;
+            .cartHeader{
+                position: fixed;
+                right: 1px;
+                z-index: 2;
+                margin: 0;
+                padding: 0;
+                width: 10%;
+                top: 1px;
+            }
+            .searchHeaderIt{
+                width: 90%;
+            }
+            .contactHeader{
+                width: 90%;
+            }
+        }
+        .logo{
+            width: 20%;
+            img{
+                width: 100%;
+            }
+        }
+        .titleHeader{
+            width: 20%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .v-header{
+        width: 100%;
+        .logo{
+            display: none;
+        }
+        .titleHeader{
+            width: 30%;
+        }
+    }
+}
+
+@media (max-width : 390px) and (min-width: 230px){
+        .v-header{
+        width: 100%;
+        height: auto;
+        .logo{
+            display: none;
+        }
+        .titleHeader{
+            display: none;
+        }
+        .searcheHeader{
+            width: 80%;
+            margin-left: 5px;
+            .cartHeader{
+                right: 20px;
+            }
+            .searchHeaderIt{
+                .my-2.my-sm-0{
+                    width: 90%;
+                }
+            }
         }
     }
 }

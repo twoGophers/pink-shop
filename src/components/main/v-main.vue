@@ -37,4 +37,17 @@ export default {
         
     }
 }
+
+@media (max-width : 390px) and (min-width: 230px){
+    .v-main{
+        display: flex;
+        flex-direction: column;
+        .leftBlock{
+            width: 50%;
+        }
+        .rightBlock{
+            width: 100%;
+        }
+    }
+}
 </style>

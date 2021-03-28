@@ -52,4 +52,10 @@ export default {
 
     }
 }
+
+@media (max-width : 390px) and (min-width: 230px){
+    .v-slider {
+        display: none;
+    }
+}
 </style>

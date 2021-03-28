@@ -4,7 +4,7 @@
         <h5>{{product_data.name}}</h5>
         <p>{{product_data.volume}} мл</p>
         <p>Цена : {{product_data.price}} P.</p>
-        <b-button variant="primary" @click="addToCart">В корзину</b-button>
+        <b-button class="btnPrice" variant="primary" @click="addToCart">В корзину</b-button>
     </div>
 </template>
 
@@ -46,6 +46,29 @@ export default {
     cursor: pointer;
     img {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .v-catalog-item {
+        flex-basis: 30%;
+        h5{
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 0.9em;
+        }
+        .btnPrice{
+            padding: 10px;
+        }
+    }
+}
+
+
+
+@media (max-width : 390px) and (min-width: 230px){
+    .v-catalog-item{
+        flex-basis: 70%;
     }
 }
 </style>

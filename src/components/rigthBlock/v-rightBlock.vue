@@ -41,6 +41,30 @@ export default {
             width: 25%;
         }
     }
-    
+}
+@media (max-width : 920px) and (min-width: 230px){
+.v-rightBlock {
+    .catalogTovar{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width : 390px) and (min-width: 230px){
+    .v-rightBlock {
+        width: 100%;
+        .slider-registr{
+            width: 100%;
+            .registr{
+                width: 100%;
+            }
+            .slider{
+                display: none;
+            }
+        }
+        .catalogTovar{
+            width: 100%;
+        }
+    }
 }
 </style>

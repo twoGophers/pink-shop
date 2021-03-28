@@ -20,4 +20,10 @@ export default {
 
 <style lang="scss">
 
+
+@media (max-width : 920px) and (min-width: 230px){
+    .v-wrapper-catalog{
+        width: 100%;
+    }
+}
 </style>

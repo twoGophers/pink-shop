@@ -33,7 +33,7 @@
                 required
                 ></b-form-input>
 
-                <b-form-checkbox class="mb-2 mr-sm-2 mb-sm-0">Запомнить меня</b-form-checkbox>
+                <b-form-checkbox class="mb-2 mr-sm-2 mb-sm-0 testCheck">Запомнить меня</b-form-checkbox>
 
                 <b-button 
                 variant="primary"
@@ -124,5 +124,15 @@ export default {
         a {
             color: rgb(3, 0, 0);
         }
+}
+
+
+@media (max-width : 390px) and (min-width: 230px){
+    .v-registr{
+        width: 100%;    
+        .custom-control{
+            z-index: 0;
+        }
+    }
 }
 </style>

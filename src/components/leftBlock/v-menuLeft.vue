@@ -13,7 +13,7 @@
             <ul class="list-group list-group-flush" >
                 <li class="list-group-item list-group-item-action" data-name='Victorias Secret'>Victoria's Secret
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action"
+                        <li class="list-group-item tx list-group-item-action"
                             v-for="(victoria, index) in victoriaS"
                             :value="victoria.value"
                             :key="index"
@@ -29,7 +29,7 @@
                 </li>
                 <li class="list-group-item list-group-item-action" data-name='Биоэпиляция'>Биоэпиляция
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action"
+                        <li class="list-group-item tx list-group-item-action"
                             v-for="(bioEpilaci, index) in bioEpilacia"
                             :value="bioEpilaci.value"
                             :key="index"
@@ -44,7 +44,7 @@
                 </li>
                 <li class="list-group-item list-group-item-action">Ногти
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action"
+                        <li class="list-group-item tx list-group-item-action"
                             v-for="(nogt, index) in nogti"
                             :value="nogt.value"
                             :key="index"
@@ -59,7 +59,7 @@
                 </li>
                 <li class="list-group-item list-group-item-action">Ресницы
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action"
+                        <li class="list-group-item tx list-group-item-action"
                             v-for="(resnic, index) in resnici"
                             :value="resnic.value"
                             :key="index"
@@ -74,7 +74,7 @@
                 </li>
                 <li class="list-group-item list-group-item-action">Уход за кожей тела
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action"
+                        <li class="list-group-item tx list-group-item-action"
                             v-for="(uhod_bod, index) in uhod_body"
                             :value="uhod_bod.value"
                             :key="index"
@@ -169,6 +169,8 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    transition: 0.5s;
     
     .menuMen {
         width: 100%;
@@ -290,6 +292,31 @@ li {
      /* .slide-fade-leave-active до версии 2.1.8 */ {
     transform: translateX(10px);
     opacity: 0;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .list-group-item{
+        font-size: 0.8em;
+        padding: 0;
+        margin: 0;
+    }
+    .tx{
+        font-size: 1em;
+    }
+    .menuMen{
+        h5{
+            font-size: 1.4em;
+        }
+    }
+}
+
+@media (max-width : 390px) and (min-width: 230px){
+    .v-menuLeft {
+        .list-group-item,.tx,.list-group-item-action {
+            z-index: 300;
+            position: relative;
+        }
     }
 }
 </style>

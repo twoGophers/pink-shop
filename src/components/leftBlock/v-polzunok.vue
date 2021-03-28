@@ -103,4 +103,10 @@ export default {
         
     }
 }
+
+@media screen and (max-width: 862px){
+    .v-polzunok{
+        display: none;
+    }
+}
 </style>

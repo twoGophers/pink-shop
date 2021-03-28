@@ -47,5 +47,11 @@ export default {
 </script>
 
 <style lang="scss">
-
+@media (max-width : 390px) and (min-width: 230px){
+  .container-fluid{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
 </style>

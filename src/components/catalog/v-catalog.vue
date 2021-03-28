@@ -2,7 +2,7 @@
     <div class="v-catalog">
         <div class="catalog_item">
             <vCatalogItem
-                v-for = "product in pagenatedProducts "
+                v-for = "product in  pagenatedProducts"
                 :key = "product.article"
                 :product_data ="product"
                 @addToCart ="addToCart"
@@ -133,7 +133,6 @@ export default {
             //'MAX_SLIDER'
         ]),
 
-        
         //Пагинация
         pages () {
             return Math.ceil(this.sortedProductsMenu.length/7);
@@ -196,4 +195,15 @@ export default {
     }
 
 }
+
+@media (max-width : 390px) and (min-width: 230px){
+    .v-catalog{
+        .catalog_item{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
 </style>

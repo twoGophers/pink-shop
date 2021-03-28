@@ -109,7 +109,23 @@ export default {
     &__total__name {
         margin-right: 16px;
     }
+}
 
+@media screen and (max-width: 920px){
+    .v-cart{
+        width: 100%;
+    }
+}
 
+@media (max-width : 390px) and (min-width: 230px){
+    .v-cart{
+        margin-bottom: 0px;
+        h3 {
+            font-size: 1.5em;
+        }
+        h4 {
+            font-size: 1.3em;
+        }
+    }
 }
 </style>

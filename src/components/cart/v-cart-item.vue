@@ -10,8 +10,7 @@
             <p>{{cart_item_data.price}} P.</p>
             
             <div class="v-cart-item__quantity">
-                
-                
+
                     <h6 class="rem">Количество :   
                         <b-button  variant = "outline-primary" @click="decrementItem"> - </b-button > 
                         <span>{{cart_item_data.quantity}}</span>
@@ -98,6 +97,29 @@ export default {
         }
         }
 
+    }
+}
+
+@media screen and (max-width: 920px){
+    .v-cart-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .v-cart-item__info{
+            p{
+                font-size: 0.9em;
+            }
+            .v-cart-item__quantity{
+                button{
+                    padding: 2px 10px; 
+                }
+                .rem{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+        }
     }
 }
 </style>
