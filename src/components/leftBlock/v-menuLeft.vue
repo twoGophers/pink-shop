@@ -301,14 +301,7 @@ li {
         padding: 0;
         margin: 0;
     }
-    .tx{
-        font-size: 1em;
-    }
-    .menuMen{
-        h5{
-            font-size: 1.4em;
-        }
-    }
+
 }
 
 @media (max-width : 390px) and (min-width: 230px){
