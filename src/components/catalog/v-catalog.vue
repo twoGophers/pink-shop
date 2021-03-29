@@ -2,7 +2,7 @@
     <div class="v-catalog">
         <div class="catalog_item">
             <vCatalogItem
-                v-for = "product in  pagenatedProducts"
+                v-for = "product in pagenatedProducts"
                 :key = "product.article"
                 :product_data ="product"
                 @addToCart ="addToCart"
@@ -70,13 +70,13 @@ export default {
         },
         //Сортировка с SEARCHE
         sortProductsBySearchValue(value) {
-            this.sortedProducts = [...this.PRODUCTS]
+            this.sortedProductsMenu = [...this.PRODUCTS]
             if (value) {
-            this.sortedProducts = this.sortedProducts.filter(function (item) {
+            this.sortedProductsMenu = this.sortedProductsMenu.filter(function (item) {
                 return item.name.toLowerCase().includes(value.toLowerCase())
                     })
                 } else {
-                    this.sortedProducts = this.PRODUCTS;
+                    this.sortedProductsMenu = this.PRODUCTS;
             }
         },
         //Сортировка с меню
