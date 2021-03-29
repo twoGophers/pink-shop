@@ -298,8 +298,6 @@ li {
 @media screen and (max-width: 960px){
     .list-group-item{
         font-size: 0.8em;
-        padding: 0;
-        margin: 0;
     }
 
 }
